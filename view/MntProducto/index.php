@@ -694,11 +694,45 @@
             <p class="mg-b-0">Aquí voy a configurar mi página de productos</p>
       </div>
 
+     <div class="br-pagebody">
+
+        
       <div class="br-pagebody">
+        
+        <div class="br-section-wrapper">
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento de Productos</h6>
 
-        <!-- start you own content here -->
 
-      </div><!-- br-pagebody -->
+          <div class="table-wrapper">
+            <table id="datatable1" class="table display responsive nowrap">
+              <thead>
+                <tr>
+                  <th class="wd-15p">Nombre del Producto</th>
+                  <th class="wd-15p">Acción</th>
+                  <th class="wd-20p">Acción</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>Gaseosa Pulp Pomelo 2L</td>
+                  <td><button class="btn btn-primary">Editar</button></td>
+                  <td><button class="btn btn-danger">Eliminar</button></td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td>Agua en botella 1.5L</td>
+                  <td><button type="button" class="btn btn-outline-primary btn-icon"> <div class="fa fa-edit"></div> </button></td>
+                  <td><button type="button" class="btn btn-outline-danger btn-icon"> <div class="fa fa-trash"></div> </button></td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div><!-- table-wrapper -->
+        </div><!-- br-pagebody -->
+      </div>
 
     </div><!-- br-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
