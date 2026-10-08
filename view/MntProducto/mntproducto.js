@@ -18,7 +18,7 @@ $(document).ready(function(){
         ],
 
         "ajax": {
-            url: '../../controller/productos.php?op=listar',
+            url: '../../controller/producto.php?op=listar',
             type: "get",
             dataType: "json",
             error: function(e){
@@ -61,5 +61,17 @@ $(document).ready(function(){
     }).DataTable();
 
 });
+
+$(document).on("click", "#btnNuevo", function(){
+    // alert("EVENTO DETECTADO")
+    $("#modalmantenimiento").modal("show");
+})
+
+function eliminar(prod_id){
+    // alert("Función eliminar id: " + prod_id)
+    $.post("../../controller/producto.php?op=eliminar", {prod_id:prod_id}, function(data){
+
+    })
+}
 
 init();
